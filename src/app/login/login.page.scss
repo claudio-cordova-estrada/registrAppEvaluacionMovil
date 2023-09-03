@@ -28,7 +28,7 @@ text-decoration: none;
 
 ion-input{
     border-radius: 10px !important;
-    padding-right: 30px;
+    padding-right: 20px;
     margin-right: 20px;
     font-size: 0.9em;
     border: 1px solid #232323 !important;
@@ -36,13 +36,10 @@ ion-input{
     /* width: 41%; */
     max-width: 50vw; // this is applying perfectly
     max-height: 10vh;
+    margin-bottom: 1em;
 }
 
 ion-item p {
     font-size: 30px;
-    text-align: center;
-}
-
-ion-content {
     text-align: center;
 }
