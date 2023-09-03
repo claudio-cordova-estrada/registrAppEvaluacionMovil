@@ -1,13 +1,30 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>hola</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<div class="ion-page" id="main-content">
+  <ion-header [translucent]="true">
     <ion-toolbar>
-      <ion-title size="large">cambiaContra</ion-title>
+      <ion-title>RegristrApp</ion-title>
     </ion-toolbar>
   </ion-header>
-</ion-content>
+
+  <ion-content [fullscreen]="true">
+    
+    <div>
+      <ion-item><p>Bienvenido!</p></ion-item>
+      <ion-item>
+        <ion-input
+        fill="solid"
+        label="Usuario"
+        labelPlacement="floating"
+        helperText="Ingrese un nombre de usuario valido"
+        errorText="Usuario invalido"
+        [counter]="true"
+        maxlength="8"
+        minLenght="3"
+        ngModel>
+        </ion-input>
+      </ion-item>
+
+      <ion-button fill="outline">Ingresar</ion-button>
+    </div>
+    
+  </ion-content>
+</div>
