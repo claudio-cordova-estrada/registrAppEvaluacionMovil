@@ -1,13 +1,32 @@
+<ion-menu side="end" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-button expand="full" href="home" color="light">
+      home
+    </ion-button>
+    <ion-button expand="full" href="login" color="light">
+      login
+    </ion-button>
+  </ion-content>
+</ion-menu>
+
 <div class="ion-page" id="main-content">
   <ion-header [translucent]="true">
     <ion-toolbar>
       <ion-title>RegristrApp</ion-title>
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
   <ion-content [fullscreen]="true">
     <div>
-      <ion-item><p>Bienvenido!</p></ion-item>
+      <ion-item>a</ion-item>
       <ion-item>
         <ion-input
         fill="solid"
@@ -37,6 +56,5 @@
 
       <ion-button fill="outline">Ingresar</ion-button>
     </div>
-    
   </ion-content>
 </div>
