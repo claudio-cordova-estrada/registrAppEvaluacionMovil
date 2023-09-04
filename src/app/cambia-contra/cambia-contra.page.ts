@@ -13,3 +13,7 @@ export class CambiaContraPage implements OnInit {
   }
 
 }
+
+export class ExampleComponent {
+  public alertButtons = ['OK'];
+}
