@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
-  constructor() { }
+  entradaUsuario: {
+    usuario: string,
+    contra: string
+  };
+
+
+  constructor() { 
+    this.entradaUsuario = {
+      usuario: '',
+      contra: ''
+    }
+  }
 
   ngOnInit() {
+  }
+
+  guardarItem(){
+    //localStorage.setItem('usuario', JSON.stringify(this.entradaUsuario));
+    localStorage.setItem('miau', JSON.stringify(this.entradaUsuario.usuario));
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoginPage } from '../login/login.page';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  hola = localStorage.getItem('miau');
   constructor() {}
 
 }

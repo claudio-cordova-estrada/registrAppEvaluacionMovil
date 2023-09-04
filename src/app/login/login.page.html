@@ -37,7 +37,7 @@
         [counter]="true"
         maxlength="8"
         minLenght="3"
-        ngModel>
+        [(ngModel)]="entradaUsuario.usuario">
       </ion-input>
       </ion-item>
       <ion-item>
@@ -50,11 +50,12 @@
         errorText="Contraseña inválida"
         [counter]="true"
         maxlength="4"
-        ngModel>
+        [(ngModel)]="entradaUsuario.contra">
         </ion-input>
       </ion-item>
 
-      <ion-button fill="outline">Ingresar</ion-button>
+
+      <ion-button fill="outline" href="home" (click)="guardarItem()">Ingresar</ion-button>
       <ion-button href="cambia-contra" fill="outline">cambia contraseña</ion-button>
       <ion-button href="login" fill="outline">volver</ion-button>
     </div>
